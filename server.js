@@ -1,6 +1,6 @@
-const express = require("express");
-const { SerialPort } = require("serialport");
-const { WebSocketServer } = require("ws");
+import express from "express";
+import { SerialPort } from "serialport";
+import { WebSocketServer } from "ws";
 
 // **🔹 Configure SerialPort (Bluetooth COM Port)**
 const portName = "COM3"; // Change this to your Arduino Bluetooth COM Port
