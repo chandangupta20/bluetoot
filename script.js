@@ -1,4 +1,5 @@
-const ws = new WebSocket('ws://localhost:3000');
+import { WebSocket } from "ws"
+const ws = new WebSocket({ port: 3000 });
 
 ws.onopen = () => console.log("Connected to WebSocket");
 ws.onerror = err => console.error("WebSocket Error:", err);
